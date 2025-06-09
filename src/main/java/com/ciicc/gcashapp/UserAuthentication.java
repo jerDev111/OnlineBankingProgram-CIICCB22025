@@ -3,6 +3,7 @@ import java.sql.*;
 
 
 public class UserAuthentication {
+
     //sql credentials
     private static String url = "jdbc:mysql://localhost/gcash";
 
@@ -44,7 +45,9 @@ public class UserAuthentication {
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());
         }
+
     }
+
 
 
 

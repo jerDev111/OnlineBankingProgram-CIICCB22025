@@ -27,7 +27,7 @@ public class CashIn {
     }
 
 
-//update and insert amount to balance
+    //update and insert amount to balance
     public void cashIn(int ID, double amount) {
         if (amount <= 0) {
             System.out.println("Invalid cash-in amount.");
@@ -62,7 +62,10 @@ public class CashIn {
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());
         }
+
     }
+
+
 
 
 }

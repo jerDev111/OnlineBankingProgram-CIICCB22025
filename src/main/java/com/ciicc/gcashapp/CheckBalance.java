@@ -27,13 +27,11 @@ public class CheckBalance {
     }
 
 
-
-
     public double checkBalance(int ID) {
         double Balance = 0.0;
         try {
             Statement st = con().createStatement();
-            String sql = "SELECT Balance FROM userdata WHERE ID= '"+ID+"'";
+            String sql = "SELECT Balance FROM userdata WHERE ID= "+ ID ;
             ResultSet rs = st.executeQuery(sql);
 
             if (rs.next()) {
@@ -50,8 +48,8 @@ public class CheckBalance {
         return Balance;
     }
 
-}
 
+}
 
 
 
