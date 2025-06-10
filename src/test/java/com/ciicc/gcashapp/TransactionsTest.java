@@ -15,13 +15,13 @@ public class TransactionsTest {
     @Test
     public void testViewUserAllDisplaysTransaction() throws SQLException {
         int testUserID = 3; //user 3, and the lastTransaction column on the database should update depending on the string inserted
-        String testTransaction = "Received 1000.0 from User ID 6"; // this should properly change the current transactLog on the lastTransaction column on the database
+        String testTransaction = "Received 8.0 from User ID 6"; // this should properly change the current transactLog on the lastTransaction column on the database
 
         // connection to database
         Connection con = Transactions.con();
         Statement st = con.createStatement();
 
-        // valid user credentials from the database.
+        // valid user credentials from the database for info reference
         st.execute("DELETE FROM userdata WHERE ID = " + testUserID );
         st.execute("INSERT INTO userdata (ID, Name, Email, Number, PIN, Balance, lastTransaction) " +
                 "VALUES (" + testUserID + ", 'maui', 'maui@',76, 8888, 88, '" + testTransaction + "')");

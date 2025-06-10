@@ -38,11 +38,11 @@ public class Main {
                     System.out.print("Enter your email: ");
                     String email = scanner.nextLine();
                     System.out.print("Enter your phone number: ");
-                    int number = scanner.nextInt();
+                     String number = scanner.nextLine();
                     System.out.print("Enter your PIN: ");
                     int pin = scanner.nextInt();
 
-                    r2.Registration(name, email, number, pin);//insert each to method
+                    r1.Registration(name, email, number, pin);//insert each to method
                     break;
 
                 case 2:

@@ -30,7 +30,7 @@ public class UserAuthentication {
 
 
     //create
-    public void Registration(String Name, String Email, int Number, int PIN) {
+    public void Registration(String Name, String Email, String Number, int PIN) {
         try {
             Statement st = con().createStatement();
             String sql = "INSERT INTO userdata (Name, Email, Number, PIN) VALUES ('"

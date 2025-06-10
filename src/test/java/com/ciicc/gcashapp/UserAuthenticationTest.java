@@ -12,7 +12,7 @@ public class UserAuthenticationTest {
     @Test
     public void testValidLogin() {
         UserAuthentication auth = new UserAuthentication();
-        assertTrue(auth.Login("jade", 9999)); //valid credentials from database
+        assertTrue(auth.Login("jade", 1914)); //valid credentials from database
     }
 
 
